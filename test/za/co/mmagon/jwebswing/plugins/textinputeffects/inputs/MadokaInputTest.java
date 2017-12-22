@@ -4,13 +4,14 @@ import org.junit.jupiter.api.Test;
 import za.co.mmagon.jwebswing.base.html.InputTextType;
 import za.co.mmagon.jwebswing.base.html.Label;
 import za.co.mmagon.jwebswing.base.html.Span;
+import za.co.mmagon.jwebswing.plugins.textinputeffects.inputs.set1.MadokaInput;
 
 class MadokaInputTest
 {
 	@Test
 	public void testMadoka()
 	{
-		InputEffect hi = new MadokaInput(new InputTextType(), new Label(), new Span("content"));
+		MadokaInput hi = new MadokaInput(new InputTextType(), new Label(), new Span("content"));
 		System.out.println(hi.toString(0));
 	}
 }

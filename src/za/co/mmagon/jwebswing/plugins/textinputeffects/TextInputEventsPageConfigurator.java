@@ -33,6 +33,8 @@ public class TextInputEventsPageConfigurator extends PageConfigurator
 
 	private static final long serialVersionUID = 1L;
 
+	private static boolean useSetOne = true;
+
 	/*
 	 * Constructs a new TextInputEventsPageConfigurator
 	 */
@@ -48,8 +50,15 @@ public class TextInputEventsPageConfigurator extends PageConfigurator
 		if (!page.isConfigured())
 		{
 			page.getBody().addJavaScriptReference(TextInputEffectsReferencePool.TextInputEffectsCassie.getJavaScriptReference());
-			page.getBody().addCssReference(TextInputEffectsReferencePool.TextInputEffectsCassie.getCssReference());
-			page.getBody().addCssReference(TextInputEffectsReferencePool.TextInputEffectSet2.getCssReference());
+
+			if (useSetOne)
+			{
+				page.getBody().addCssReference(TextInputEffectsReferencePool.TextInputEffectsCassie.getCssReference());
+			}
+			else
+			{
+				page.getBody().addCssReference(TextInputEffectsReferencePool.TextInputEffectSet2.getCssReference());
+			}
 
 			String template = FileTemplates.getFileTemplate(TextInputEventsPageConfigurator.class, "textinputeffects", "textinputeffects.min.js").toString();
 			Script script = new Script();
@@ -57,5 +66,29 @@ public class TextInputEventsPageConfigurator extends PageConfigurator
 			page.getBody().add(script);
 		}
 		return page;
+	}
+
+	/**
+	 * Whether Set 1 or Set 2 is loaded.
+	 * Unfortunately no cross compatibilty - yet
+	 * TODO
+	 *
+	 * @return
+	 */
+	public static boolean isUseSetOne()
+	{
+		return useSetOne;
+	}
+
+	/**
+	 * Whether Set 1 or Set 2 is loaded.
+	 * Unfortunately no cross compatibilty - yet
+	 * TODO
+	 *
+	 * @param useSetOne
+	 */
+	public static void setUseSetOne(boolean useSetOne)
+	{
+		TextInputEventsPageConfigurator.useSetOne = useSetOne;
 	}
 }

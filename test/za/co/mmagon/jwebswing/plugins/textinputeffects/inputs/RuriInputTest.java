@@ -4,13 +4,14 @@ import org.junit.jupiter.api.Test;
 import za.co.mmagon.jwebswing.base.html.InputTextType;
 import za.co.mmagon.jwebswing.base.html.Label;
 import za.co.mmagon.jwebswing.base.html.Span;
+import za.co.mmagon.jwebswing.plugins.textinputeffects.inputs.set2.RuriSet2Input;
 
 class RuriInputTest
 {
 	@Test
 	public void testKyo()
 	{
-		InputEffect hi = new RuriInput(new InputTextType(), new Label(), new Span("content"));
+		RuriSet2Input hi = new RuriSet2Input(new InputTextType(), new Label(), new Span("content"));
 		System.out.println(hi.toString(0));
 	}
 }
