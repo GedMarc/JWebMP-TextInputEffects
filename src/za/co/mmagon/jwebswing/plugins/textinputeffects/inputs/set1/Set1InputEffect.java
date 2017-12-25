@@ -10,7 +10,7 @@ import za.co.mmagon.jwebswing.plugins.textinputeffects.TextInputEventsPageConfig
 /**
  * A base input effect component
  */
-abstract class Set1InputEffect<J extends Set1InputEffect<J>> extends Span<GlobalChildren, NoAttributes, Set1InputEffect<J>>
+public abstract class Set1InputEffect<J extends Set1InputEffect<J>> extends Span<GlobalChildren, NoAttributes, Set1InputEffect<J>>
 {
 	/**
 	 * The top effect class
@@ -269,5 +269,17 @@ abstract class Set1InputEffect<J extends Set1InputEffect<J>> extends Span<Global
 	{
 		this.content = content;
 		return (J) this;
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		return super.equals(o);
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return super.hashCode();
 	}
 }

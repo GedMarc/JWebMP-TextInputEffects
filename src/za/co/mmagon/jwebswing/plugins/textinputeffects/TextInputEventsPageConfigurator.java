@@ -70,8 +70,6 @@ public class TextInputEventsPageConfigurator extends PageConfigurator
 
 	/**
 	 * Whether Set 1 or Set 2 is loaded.
-	 * Unfortunately no cross compatibilty - yet
-	 * TODO
 	 *
 	 * @return
 	 */
@@ -82,8 +80,6 @@ public class TextInputEventsPageConfigurator extends PageConfigurator
 
 	/**
 	 * Whether Set 1 or Set 2 is loaded.
-	 * Unfortunately no cross compatibilty - yet
-	 * TODO
 	 *
 	 * @param useSetOne
 	 */

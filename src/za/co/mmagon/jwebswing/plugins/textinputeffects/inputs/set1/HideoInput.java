@@ -55,16 +55,25 @@ public class HideoInput extends Set1InputEffect
 	@SuppressWarnings("unchecked")
 	public void init()
 	{
-		if (!isInitialized())
+		if (!isInitialized() && getLabel() != null)
 		{
-			if (getLabel() != null)
-			{
-				Italic<?> i = new Italic();
-				i.addClass(icon);
-				i.addClass("icon icon--hideo");
-				getLabel().add(i);
-			}
+			Italic<?> i = new Italic();
+			i.addClass(icon);
+			i.addClass("icon icon--hideo");
+			getLabel().add(i);
 		}
 		super.init();
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		return super.equals(o);
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return super.hashCode();
 	}
 }
