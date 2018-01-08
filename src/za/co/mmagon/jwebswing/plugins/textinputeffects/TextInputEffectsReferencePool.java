@@ -14,9 +14,9 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
 enum TextInputEffectsReferencePool implements ReferencePool
 {
 	TextInputEffectsCassie(new JavascriptReference("TextInputEffectsCassie", 1.6, "textinputeffects/js/classie.min.js"),
-	                       new CSSReference("TextInputEffectsSet1", 1.0, "textinputeffects/css/set1.css")),
+	                       new CSSReference("TextInputEffectsSet1", 1.0, "textinputeffects/css/set1.min.css")),
 	TextInputEffectSet2(null,
-	                    new CSSReference("TextInputEffectsSet2", 1.0, "textinputeffects/css/set2.css")
+	                    new CSSReference("TextInputEffectsSet2", 1.0, "textinputeffects/css/set2.min.css")
 	);
 	/**
 	 * Any sub data
