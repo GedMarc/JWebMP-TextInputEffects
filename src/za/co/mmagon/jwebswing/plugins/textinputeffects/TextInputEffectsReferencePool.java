@@ -15,9 +15,10 @@ enum TextInputEffectsReferencePool implements ReferencePool
 {
 	TextInputEffectsCassie(new JavascriptReference("TextInputEffectsCassie", 1.6, "textinputeffects/js/classie.min.js"),
 	                       new CSSReference("TextInputEffectsSet1", 1.0, "textinputeffects/css/set1.min.css")),
-	TextInputEffectSet2(null,
-	                    new CSSReference("TextInputEffectsSet2", 1.0, "textinputeffects/css/set2.min.css")
-	);
+
+	TextInputEffectSet2(null, new CSSReference("TextInputEffectsSet2", 1.0, "textinputeffects/css/set2.min.css")),
+	ClassieTypeText(new JavascriptReference("ClassieScript", 1.0, "textinputeffects/textinputeffects.min.js").setPriority(
+			RequirementsPriority.Top_Shelf), null);
 	/**
 	 * Any sub data
 	 */

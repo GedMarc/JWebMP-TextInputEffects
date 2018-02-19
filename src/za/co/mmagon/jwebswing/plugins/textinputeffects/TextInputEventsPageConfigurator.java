@@ -1,9 +1,7 @@
 package za.co.mmagon.jwebswing.plugins.textinputeffects;
 
-import za.co.mmagon.FileTemplates;
 import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.base.html.Script;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.PluginInformation;
 
@@ -60,10 +58,13 @@ public class TextInputEventsPageConfigurator extends PageConfigurator
 				page.getBody().addCssReference(TextInputEffectsReferencePool.TextInputEffectSet2.getCssReference());
 			}
 
+			page.getBody()
+					.addJavaScriptReference(TextInputEffectsReferencePool.ClassieTypeText.getJavaScriptReference());
+			/*
 			String template = FileTemplates.getFileTemplate(TextInputEventsPageConfigurator.class, "textinputeffects", "textinputeffects.min.js").toString();
 			Script script = new Script();
 			script.setJavascript(template);
-			page.getBody().add(script);
+			page.getBody().add(script);*/
 		}
 		return page;
 	}
