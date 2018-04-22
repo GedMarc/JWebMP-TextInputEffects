@@ -17,14 +17,14 @@
 
 package com.jwebmp.plugins.textinputeffects;
 
-import com.jwebmp.BaseTestClass;
 import com.jwebmp.Page;
 import org.junit.jupiter.api.Test;
 
 /**
  * @author Marc Magon
  */
-public class TextInputEventsPageConfiguratorTest extends BaseTestClass
+public class TextInputEventsPageConfiguratorTest
+
 {
 
 	public TextInputEventsPageConfiguratorTest()
@@ -34,7 +34,7 @@ public class TextInputEventsPageConfiguratorTest extends BaseTestClass
 	@Test
 	public void testSomeMethod()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		System.out.println(p.toString(0));
 	}
 }
