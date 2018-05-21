@@ -28,14 +28,14 @@ import com.jwebmp.base.servlets.interfaces.ReferencePool;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-enum TextInputEffectsReferencePool implements ReferencePool
+enum TextInputEffectsReferencePool
+		implements ReferencePool
 {
-	TextInputEffectsCassie(new JavascriptReference("TextInputEffectsCassie", 1.6, "textinputeffects/js/classie.min.js"),
+	TextInputEffectsCassie(new JavascriptReference("TextInputEffectsCassie", 1.6, "textinputeffects/js/classie.min.js").setPriority(RequirementsPriority.Top_Shelf),
 	                       new CSSReference("TextInputEffectsSet1", 1.0, "textinputeffects/css/set1.min.css")),
 
 	TextInputEffectSet2(null, new CSSReference("TextInputEffectsSet2", 1.0, "textinputeffects/css/set2.min.css")),
-	ClassieTypeText(new JavascriptReference("ClassieScript", 1.0, "textinputeffects/textinputeffects.min.js").setPriority(
-			RequirementsPriority.Top_Shelf), null);
+	ClassieTypeText(new JavascriptReference("ClassieScript", 1.0, "textinputeffects/textinputeffects.min.js"), null);
 	/**
 	 * Any sub data
 	 */
@@ -56,12 +56,12 @@ enum TextInputEffectsReferencePool implements ReferencePool
 		this.javaScriptReference = javaScriptReference;
 		if (this.javaScriptReference != null)
 		{
-			this.javaScriptReference.setPriority(RequirementsPriority.Top_Shelf);
+			//	this.javaScriptReference.setPriority(RequirementsPriority.Top_Shelf);
 		}
 		this.cssReference = cssReference;
 		if (this.cssReference != null)
 		{
-			this.cssReference.setPriority(RequirementsPriority.DontCare);
+			//	this.cssReference.setPriority(RequirementsPriority.DontCare);
 		}
 	}
 
