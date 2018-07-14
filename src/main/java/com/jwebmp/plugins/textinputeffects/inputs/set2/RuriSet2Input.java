@@ -15,10 +15,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.textinputeffects.inputs.set1;
+package com.jwebmp.plugins.textinputeffects.inputs.set2;
 
 import com.jwebmp.base.html.Input;
-import com.jwebmp.base.html.Italic;
 import com.jwebmp.base.html.Label;
 import com.jwebmp.base.html.Span;
 import com.jwebmp.plugins.ComponentInformation;
@@ -26,13 +25,12 @@ import com.jwebmp.plugins.ComponentInformation;
 /**
  * Creates a haruki input style
  */
-@ComponentInformation(name = "Hideo Input Effect",
+@ComponentInformation(name = "Ruri Input Effect",
 		description = "A very nice effect for inputs",
 		url = "https://tympanus.net/Development/TextInputEffects/index2.html")
-public class HideoInput
-		extends Set1InputEffect
+public class RuriSet2Input
+		extends Set2InputEffect
 {
-	private String icon;
 
 	/**
 	 * Creates a new haruki styled input
@@ -41,59 +39,9 @@ public class HideoInput
 	 * @param label
 	 * @param content
 	 */
-	public HideoInput(Input input, Label label, Span content, String icon)
+	public RuriSet2Input(Input input, Label label, Span content)
 	{
-		super("hideo", input, label, content);
-		setIcon(icon);
-
+		super("ruri", input, label, content);
 	}
 
-	/**
-	 * Gets the icon in the box
-	 *
-	 * @return
-	 */
-	public String getIcon()
-	{
-		return icon;
-	}
-
-	/**
-	 * Sets the icon in the box
-	 *
-	 * @param icon
-	 *
-	 * @return
-	 */
-	public HideoInput setIcon(String icon)
-	{
-		this.icon = icon;
-		return this;
-	}
-
-	@Override
-	@SuppressWarnings("unchecked")
-	public void init()
-	{
-		if (!isInitialized() && getLabel() != null)
-		{
-			Italic<?> i = new Italic();
-			i.addClass(icon);
-			i.addClass("icon icon--hideo");
-			getLabel().add(i);
-		}
-		super.init();
-	}
-
-	@Override
-	public int hashCode()
-	{
-		return super.hashCode();
-	}
-
-	@Override
-	public boolean equals(Object o)
-	{
-		return super.equals(o);
-	}
 }

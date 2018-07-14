@@ -9,14 +9,14 @@ import com.jwebmp.plugins.ComponentInformation;
 /**
  * Creates a haruki input style
  */
-@ComponentInformation(name = "Kohana Input Effect",
+@ComponentInformation(name = "Sae Input Effect",
 		description = "A very nice effect for inputs",
 		url = "https://tympanus.net/Development/TextInputEffects/index2.html")
-public class KohanaSet2Input
+public class SaeSet2Input
 		extends Set2InputEffect
 {
-	private String icon;
 
+	private String icon;
 
 	/**
 	 * Creates a new haruki styled input
@@ -25,11 +25,10 @@ public class KohanaSet2Input
 	 * @param label
 	 * @param content
 	 */
-	public KohanaSet2Input(Input input, Label label, Span content)
+	public SaeSet2Input(Input input, Label label, Span content)
 	{
-		super("kohana", input, label, content);
+		super("sae", input, label, content);
 	}
-
 
 	/**
 	 * Gets the icon in the box
@@ -48,7 +47,7 @@ public class KohanaSet2Input
 	 *
 	 * @return
 	 */
-	public KohanaSet2Input setIcon(String icon)
+	public SaeSet2Input setIcon(String icon)
 	{
 		this.icon = icon;
 		return this;
@@ -62,22 +61,21 @@ public class KohanaSet2Input
 		{
 			Italic<?> i = new Italic();
 			i.addClass(icon);
-			i.addClass("icon icon--kohana");
+			i.addClass("icon icon--sae");
 			getLabel().add(i);
 		}
-
 		super.init();
-	}
-
-	@Override
-	public int hashCode()
-	{
-		return super.hashCode();
 	}
 
 	@Override
 	public boolean equals(Object o)
 	{
 		return super.equals(o);
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return super.hashCode();
 	}
 }
