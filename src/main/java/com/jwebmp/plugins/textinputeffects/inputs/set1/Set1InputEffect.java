@@ -17,11 +17,11 @@
 
 package com.jwebmp.plugins.textinputeffects.inputs.set1;
 
-import com.jwebmp.base.html.Input;
-import com.jwebmp.base.html.Label;
-import com.jwebmp.base.html.Span;
-import com.jwebmp.base.html.attributes.NoAttributes;
-import com.jwebmp.base.html.interfaces.GlobalChildren;
+import com.jwebmp.core.base.html.Input;
+import com.jwebmp.core.base.html.Label;
+import com.jwebmp.core.base.html.Span;
+import com.jwebmp.core.base.html.attributes.NoAttributes;
+import com.jwebmp.core.base.html.interfaces.GlobalChildren;
 import com.jwebmp.plugins.textinputeffects.TextInputEventsPageConfigurator;
 
 /**

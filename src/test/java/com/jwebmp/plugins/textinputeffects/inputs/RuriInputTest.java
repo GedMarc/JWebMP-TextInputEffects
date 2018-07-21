@@ -17,9 +17,9 @@
 
 package com.jwebmp.plugins.textinputeffects.inputs;
 
-import com.jwebmp.base.html.Label;
-import com.jwebmp.base.html.Span;
-import com.jwebmp.base.html.inputs.InputTextType;
+import com.jwebmp.core.base.html.Label;
+import com.jwebmp.core.base.html.Span;
+import com.jwebmp.core.base.html.inputs.InputTextType;
 import com.jwebmp.plugins.textinputeffects.inputs.set2.RuriSet2Input;
 import org.junit.jupiter.api.Test;
 

@@ -17,9 +17,9 @@
 
 package com.jwebmp.plugins.textinputeffects.inputs.set2;
 
-import com.jwebmp.base.html.Input;
-import com.jwebmp.base.html.Label;
-import com.jwebmp.base.html.Span;
+import com.jwebmp.core.base.html.Input;
+import com.jwebmp.core.base.html.Label;
+import com.jwebmp.core.base.html.Span;
 import com.jwebmp.plugins.textinputeffects.inputs.set1.Set1InputEffect;
 
 /**

@@ -17,10 +17,10 @@
 
 package com.jwebmp.plugins.textinputeffects;
 
-import com.jwebmp.Page;
-import com.jwebmp.PageConfigurator;
-import com.jwebmp.plugins.ComponentInformation;
-import com.jwebmp.plugins.PluginInformation;
+import com.jwebmp.core.Page;
+import com.jwebmp.core.PageConfigurator;
+import com.jwebmp.core.plugins.ComponentInformation;
+import com.jwebmp.core.plugins.PluginInformation;
 
 /**
  * @author Marc Magon

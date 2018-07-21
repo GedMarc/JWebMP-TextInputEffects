@@ -17,11 +17,11 @@
 
 package com.jwebmp.plugins.textinputeffects.inputs.set1;
 
-import com.jwebmp.base.html.Input;
-import com.jwebmp.base.html.Italic;
-import com.jwebmp.base.html.Label;
-import com.jwebmp.base.html.Span;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Input;
+import com.jwebmp.core.base.html.Italic;
+import com.jwebmp.core.base.html.Label;
+import com.jwebmp.core.base.html.Span;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * Creates a haruki input style
