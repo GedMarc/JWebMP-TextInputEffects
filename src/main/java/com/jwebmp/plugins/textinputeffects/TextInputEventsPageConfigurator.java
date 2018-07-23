@@ -18,9 +18,9 @@
 package com.jwebmp.plugins.textinputeffects;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * @author Marc Magon
@@ -43,11 +43,8 @@ import com.jwebmp.core.plugins.PluginInformation;
 		description = "Simple ideas for enhancing text input interactions",
 		url = "https://tympanus.net/Development/TextInputEffects/")
 public class TextInputEventsPageConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
-
 	private static boolean useSetOne = true;
 
 	/*

@@ -1,3 +1,6 @@
+import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.plugins.textinputeffects.TextInputEventsPageConfigurator;
+
 module com.jwebmp.plugins.textinputeffects {
 
 	exports com.jwebmp.plugins.textinputeffects;
@@ -10,4 +13,6 @@ module com.jwebmp.plugins.textinputeffects {
 
 	requires java.validation;
 	requires java.logging;
+
+	provides IPageConfigurator with TextInputEventsPageConfigurator;
 }
