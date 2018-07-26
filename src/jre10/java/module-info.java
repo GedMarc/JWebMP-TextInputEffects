@@ -15,4 +15,8 @@ module com.jwebmp.plugins.textinputeffects {
 	requires java.logging;
 
 	provides IPageConfigurator with TextInputEventsPageConfigurator;
+
+	opens com.jwebmp.plugins.textinputeffects to com.fasterxml.jackson.databind,com.jwebmp.core;
+	opens com.jwebmp.plugins.textinputeffects.inputs.set1 to com.fasterxml.jackson.databind,com.jwebmp.core;
+	opens com.jwebmp.plugins.textinputeffects.inputs.set2 to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
