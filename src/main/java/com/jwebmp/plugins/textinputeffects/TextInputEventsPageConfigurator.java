@@ -22,6 +22,8 @@ import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.services.IPageConfigurator;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * @author Marc Magon
  * @since 08 Jun 2017
@@ -75,6 +77,7 @@ public class TextInputEventsPageConfigurator
 		TextInputEventsPageConfigurator.useSetOne = useSetOne;
 	}
 
+	@NotNull
 	@Override
 	@SuppressWarnings("unchecked")
 	public Page configure(Page page)
