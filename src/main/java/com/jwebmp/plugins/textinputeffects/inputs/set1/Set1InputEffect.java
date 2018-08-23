@@ -21,14 +21,14 @@ import com.jwebmp.core.base.html.Input;
 import com.jwebmp.core.base.html.Label;
 import com.jwebmp.core.base.html.Span;
 import com.jwebmp.core.base.html.attributes.NoAttributes;
-import com.jwebmp.core.base.html.interfaces.GlobalChildren;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.plugins.textinputeffects.TextInputEventsPageConfigurator;
 
 /**
  * A base input effect component
  */
 public abstract class Set1InputEffect<J extends Set1InputEffect<J>>
-		extends Span<GlobalChildren, NoAttributes, Set1InputEffect<J>>
+		extends Span<IComponentHierarchyBase, NoAttributes, Set1InputEffect<J>>
 {
 	/**
 	 * The top effect class
@@ -289,14 +289,14 @@ public abstract class Set1InputEffect<J extends Set1InputEffect<J>>
 	}
 
 	@Override
-	public boolean equals(Object o)
-	{
-		return super.equals(o);
-	}
-
-	@Override
 	public int hashCode()
 	{
 		return super.hashCode();
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		return super.equals(o);
 	}
 }
