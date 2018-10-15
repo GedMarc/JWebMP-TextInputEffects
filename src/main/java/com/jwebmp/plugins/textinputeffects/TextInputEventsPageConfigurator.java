@@ -35,8 +35,8 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "text,effects, styling,ui,web ui, framework",
 		pluginSubtitle = "Simple ideas for enhancing text input interactions",
 		pluginSourceUrl = "https://tympanus.net/Development/TextInputEffects/",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-TextInputEffects/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-TextInputEffects",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-TextInputEffects/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-TextInputEffects",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://tympanus.net/Development/TextInputEffects/",
@@ -45,7 +45,7 @@ import javax.validation.constraints.NotNull;
 		description = "Simple ideas for enhancing text input interactions",
 		url = "https://tympanus.net/Development/TextInputEffects/")
 public class TextInputEventsPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<TextInputEventsPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
