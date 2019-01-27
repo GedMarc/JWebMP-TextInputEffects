@@ -1,9 +1,3 @@
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.textinputeffects.TextInputEventsPageConfigurator;
-import com.jwebmp.plugins.textinputeffects.implementations.TextInputEffectsExclusionsModule;
-
 module com.jwebmp.plugins.textinputeffects {
 
 	exports com.jwebmp.plugins.textinputeffects;
@@ -18,10 +12,10 @@ module com.jwebmp.plugins.textinputeffects {
 	requires java.logging;
 	requires com.jwebmp.guicedinjection;
 
-	provides IPageConfigurator with TextInputEventsPageConfigurator;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.textinputeffects.TextInputEventsPageConfigurator;
 
-	provides IGuiceScanJarExclusions with TextInputEffectsExclusionsModule;
-	provides IGuiceScanModuleExclusions with TextInputEffectsExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.textinputeffects.implementations.TextInputEffectsExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.textinputeffects.implementations.TextInputEffectsExclusionsModule;
 
 	opens com.jwebmp.plugins.textinputeffects to com.fasterxml.jackson.databind, com.jwebmp.core;
 	opens com.jwebmp.plugins.textinputeffects.inputs.set1 to com.fasterxml.jackson.databind, com.jwebmp.core;
