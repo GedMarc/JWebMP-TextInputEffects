@@ -111,7 +111,7 @@ public class TextInputEventsPageConfigurator
 	@SuppressWarnings("unchecked")
 	public Page configure(Page page)
 	{
-		if (!page.isConfigured())
+		if (!page.isConfigured() && enabled())
 		{
 			page.getBody()
 			    .addJavaScriptReference(TextInputEffectsReferencePool.TextInputEffectsCassie.getJavaScriptReference());
