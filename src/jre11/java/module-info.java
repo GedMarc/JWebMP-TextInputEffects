@@ -14,7 +14,6 @@ module com.jwebmp.plugins.textinputeffects {
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.textinputeffects.TextInputEventsPageConfigurator;
 
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.textinputeffects.implementations.TextInputEffectsExclusionsModule;
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.textinputeffects.implementations.TextInputEffectsExclusionsModule;
 
 	opens com.jwebmp.plugins.textinputeffects to com.fasterxml.jackson.databind, com.jwebmp.core;
