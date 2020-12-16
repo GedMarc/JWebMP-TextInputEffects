@@ -30,7 +30,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 		description = "A very nice effect for inputs",
 		url = "https://tympanus.net/Development/TextInputEffects/index2.html")
 public class KozakuraSet2Input
-		extends Set2InputEffect
+		extends Set2InputEffect<KozakuraSet2Input>
 {
 	/**
 	 * Creates a new haruki styled input

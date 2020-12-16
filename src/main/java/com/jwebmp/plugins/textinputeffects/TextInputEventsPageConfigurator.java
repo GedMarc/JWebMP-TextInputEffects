@@ -20,6 +20,7 @@ package com.jwebmp.plugins.textinputeffects;
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import jakarta.validation.constraints.NotNull;
@@ -40,7 +41,12 @@ import jakarta.validation.constraints.NotNull;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://tympanus.net/Development/TextInputEffects/",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/TextInputEffects.jar/download")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.forms/jwebmp-text-input-effects",
+		pluginGroupId = "com.jwebmp.plugins.forms",
+		pluginArtifactId = "jwebmp-text-input-effects",
+		pluginModuleName = "com.jwebmp.plugins.textinputeffects",
+		pluginStatus = PluginStatus.Released
+)
 @ComponentInformation(name = "Text Input Effects",
 		description = "Simple ideas for enhancing text input interactions",
 		url = "https://tympanus.net/Development/TextInputEffects/")

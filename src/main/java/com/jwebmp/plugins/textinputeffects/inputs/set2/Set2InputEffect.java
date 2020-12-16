@@ -26,7 +26,7 @@ import com.jwebmp.plugins.textinputeffects.inputs.set1.Set1InputEffect;
  * A base input effect component
  */
 abstract class Set2InputEffect<J extends Set2InputEffect<J>>
-		extends Set1InputEffect
+		extends Set1InputEffect<J>
 {
 	public Set2InputEffect(String topEffectClass, Input input, Label label, Span content)
 	{

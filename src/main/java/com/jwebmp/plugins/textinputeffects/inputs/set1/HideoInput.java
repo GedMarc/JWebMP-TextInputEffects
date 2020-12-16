@@ -30,7 +30,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 		description = "A very nice effect for inputs",
 		url = "https://tympanus.net/Development/TextInputEffects/index2.html")
 public class HideoInput
-		extends Set1InputEffect
+		extends Set1InputEffect<HideoInput>
 {
 	private String icon;
 

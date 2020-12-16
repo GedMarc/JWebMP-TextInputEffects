@@ -29,7 +29,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 		description = "A very nice effect for inputs",
 		url = "https://tympanus.net/Development/TextInputEffects/index2.html")
 public class YokoInput
-		extends Set1InputEffect
+		extends Set1InputEffect<YokoInput>
 {
 	/**
 	 * Creates a new haruki styled input

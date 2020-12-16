@@ -13,7 +13,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 		description = "A very nice effect for inputs",
 		url = "https://tympanus.net/Development/TextInputEffects/index2.html")
 public class KohanaSet2Input
-		extends Set2InputEffect
+		extends Set2InputEffect<KohanaSet2Input>
 {
 	private String icon;
 
