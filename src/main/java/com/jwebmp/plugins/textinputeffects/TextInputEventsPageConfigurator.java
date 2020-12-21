@@ -31,7 +31,7 @@ import jakarta.validation.constraints.NotNull;
  */
 @PluginInformation(pluginName = "Text Input Effects",
 		pluginDescription = "Simple ideas for enhancing text input interactions",
-		pluginUniqueName = "jwebswing-text-input-effects",
+		pluginUniqueName = "text-input-effects",
 		pluginVersion = "1.0.0",
 		pluginCategories = "text,effects, styling,ui,web ui, framework",
 		pluginSubtitle = "Simple ideas for enhancing text input interactions",
